@@ -19,11 +19,7 @@ Template.poll.events({
     action[voteString] = 1;
     
     // increment the number of votes for this choice
-    Polls.update(
-      { _id: pollID }, 
-      { $inc: action }
-    );
-
+    Meteor.call('vote', pollID, action);
   }
 
 });
