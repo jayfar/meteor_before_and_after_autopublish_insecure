@@ -16,3 +16,6 @@ UI.registerHelper('indexedArray', function(context, options) {
     });
   }
 });
+
+
+ Meteor.subscribe("polls");
