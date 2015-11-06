@@ -1,6 +1,6 @@
 # Meteor Project Before and After Autopublish and Insecure packages were removed
 
-I followed this tutorial (https://scotch.io/tutorials/learn-meteor-js-from-scratch-build-a-polling-app), but wanted to take it a step further by updating the code to work again after removing meteor's autopublish and insecure packages. Each of these steps below was a separate git checkin so we can see the exact changes along the way by clicking on the commits link in the top left corner.
+I followed [this tutorial] (https://scotch.io/tutorials/learn-meteor-js-from-scratch-build-a-polling-app), but wanted to take it a step further by updating the code to work again after removing meteor's autopublish and insecure packages. Each of these steps below was a separate git checkin so we can see the exact changes along the way [by looking at the code commits in github] (https://github.com/jayfar/meteor_before_and_after_autopublish_insecure/commits/master/polling).
 
 Without the autopublish package, we will have to specify explicitly what the server sends to the client. The functions in Meteor that do this are Meteor.publish and Meteor.subscribe. I added a publish.js file on the server with this code:
 
